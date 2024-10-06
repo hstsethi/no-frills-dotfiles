@@ -21,7 +21,7 @@ vim.keymap.set("n", "<leader>dt", function()
 	vim.api.nvim_command("r !date +\\%Y-\\%m-\\%d")
 end, { noremap = true }) 
 vim.keymap.set("n", "<leader>f", "<cmd>FzfLua<CR>")
-vim.keymap.set("n", "<leader>r", ":make<CR>:copen", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>r", ":make<CR>:cwopen", { noremap = true, silent = true }) -- cwopen option only opens qf window if there are errors.
 require("plguins")
 require("python")
 require("lsp")
