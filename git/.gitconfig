@@ -1,0 +1,16 @@
+[user]
+    email = hstsethi@outlook.com
+	name = HstSethi
+[safe]
+	directory = /storage/emulated/0/mysitr
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[alias]
+    a = !git add . && git status --short --branch ;See what files got added. 
+    s = status --short --branch 
+    c = commit
+    cm = commit -a -m
+    l = log --oneline
+
