@@ -17,6 +17,7 @@ vim.api.nvim_set_keymap("n", "<leader>ss", ":setlocal spell!<cr>", { noremap = t
 vim.api.nvim_set_keymap("n", "<leader>sn", "]s", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>sp", "[s", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>sa", "zg", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "jjj", "<ESC>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>dt", function()
 	vim.api.nvim_command("r !date +\\%Y-\\%m-\\%d")
 end, { noremap = true }) 

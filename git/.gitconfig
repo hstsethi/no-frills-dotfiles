@@ -13,4 +13,8 @@
     c = commit
     cm = commit -a -m
     l = log --oneline
+    p = pull
+    P = push
+    cl = clone
+    cls = clone --depth=1 ; For shallow clones
 
