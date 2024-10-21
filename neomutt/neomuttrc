@@ -1,0 +1,21 @@
+set realname = "Harshit Sethi"
+set folder="imaps://imap-mail.outlook.com:993" # Office 365 address wont be used, as I have a personal account. 
+set editor = "nvim"
+set spoolfile = "+INBOX"
+set ssl_force_tls              = "yes"
+set ssl_starttls               = "yes"
+
+## Keybindings
+bind pager j next-line
+bind pager k previous-line
+bind pager g top
+bind pager G bottom
+bind index,pager R group-reply
+bind index,pager \Cr group-reply
+
+## IMAP Settings
+set imap_authenticators        = "oauthbearer:xoauth2"
+# outlook.com requires 0Auth, it doesn't support IMAP via password.
+set imap_oauth_refresh_command = "`/bin/echo -n $HOME/.local/bin/mutt_oauth2.py $HOME/.config/neomutt/outlook.token`" #If it says that empty string was provided than run the command below:
+#export GPG_TTY=$(tty)
+set imap_user = "hstsethi@outlook.com"

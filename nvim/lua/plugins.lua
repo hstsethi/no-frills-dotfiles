@@ -16,6 +16,7 @@ require("lazy").setup({
 		"folke/which-key.nvim",
 		"numtoStr/comment.nvim",
 		"ibhagwan/fzf-lua", -- Telebloat not required
+        "tpope/vim-fugitive",
 	},
 })
 require("Comment").setup()
