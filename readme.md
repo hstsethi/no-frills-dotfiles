@@ -7,6 +7,24 @@ The pictures below  were randomly taken during my work. I didn't setup these pro
 ![Neovim Workflow](hstsethi-no-frills-workflow-1.jpg)
 ![NeoMutt Git workflow](hstsethi-no-frills-workflow-2.jpg)
 
+
+## Configurations Not Available Here
+
+- Music Player
+  
+    Because I don't listen to music.
+
+- Video Player
+  
+    I don't watch videos. If I do, I  stick with default mpv, ffplay.
+
+- Wallpaper Utility
+
+- Web Browser
+ 
+   I mostly use Librewolf, Elinks with default configuration.
+
+
 ## No Frills Dotfiles Manifesto
 
 - Efficiency, time savings over aesthetic.
