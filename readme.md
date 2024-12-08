@@ -24,6 +24,10 @@ The pictures below  were randomly taken during my work. I didn't setup these pro
  
    I mostly use Librewolf, Elinks with default configuration.
 
+- Grub Config
+
+  Because It is specific to machine. Instead I have provided grub template which I use with `grub2-mkconfig`. It sets max cpu to 4, disables framebuffer and splash screen.
+
 
 ## No Frills Dotfiles Manifesto
 
