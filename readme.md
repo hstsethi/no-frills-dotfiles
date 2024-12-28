@@ -32,6 +32,7 @@ The pictures below  were randomly taken during my work. I didn't setup these pro
 
 I mostly use Imagemagick from command line for cropping, chopping, resizing. I just guess the required chop size and it often works. For trivial tasks, I use Gimp.
 
+See my `crop-sc-status-nav-bar.sh` [script](https://github.com/hstsethi/matrix-scripts) for a practical example.
 
 ## No Frills Dotfiles Manifesto
 
