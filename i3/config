@@ -179,7 +179,8 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
-}
+        }
+
 
 bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -188,5 +189,15 @@ bar {
         status_command i3status
        
 }
+        exec --no-startup-id gammastep -O 2000
+bindsym $mod+Shift+x exec --no-startup-id "\
+    sleep 1; \
+    maim --hidecursor ~/screenshots/$(date +%Y-%m-%dT%H-%M-%S_).png; \
+    i3-nagbar --message 'Screenshot created' --type warning & \
+    sleep 1; pkill i3-nagbar"
+bindsym $mod+Shift+s exec --no-startup-id "\
+    sleep 1; \
+    maim -s --hidecursor ~/screenshots/$(date +%Y-%m-%dT%H-%M-%S_cropped).png; \
+    i3-nagbar --message 'Cropped Screenshot created' --type warning & \
+    sleep 1; pkill i3-nagbar"
 
-        exec gammastep -O 2000
