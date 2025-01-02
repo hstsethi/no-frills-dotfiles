@@ -34,6 +34,8 @@ I mostly use Imagemagick from command line for cropping, chopping, resizing. I j
 
 See my `crop-sc-status-nav-bar.sh` [script](https://github.com/hstsethi/matrix-scripts) for a practical example.
 
+Though, this usually has to be done only with mobile screenshots, as on desktop, I use combination of I3 shortcuts, Dmenu, Maim to take cropped screenshots, and save them with  ISO 8601 formatted date followed by input variable collected through Dmenu.  The shortcut is `$Mod1 + Shift + s`.
+
 ## No Frills Dotfiles Manifesto
 
 - Efficiency, time savings over aesthetic.
