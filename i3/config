@@ -190,14 +190,6 @@ bar {
        
 }
         exec --no-startup-id gammastep -O 2000
-bindsym $mod+Shift+x exec --no-startup-id "\
-    sleep 1; \
-    maim --hidecursor ~/screenshots/$(date +%Y-%m-%dT%H-%M-%S_).png; \
-    i3-nagbar --message 'Screenshot created' --type warning & \
-    sleep 1; pkill i3-nagbar"
-bindsym $mod+Shift+s exec --no-startup-id "\
-    sleep 1; \
-    maim -s --hidecursor ~/screenshots/$(date +%Y-%m-%dT%H-%M-%S_cropped).png; \
-    i3-nagbar --message 'Cropped Screenshot created' --type warning & \
-    sleep 1; pkill i3-nagbar"
+bindsym $mod+Shift+x exec --no-startup-id "outfilePrefix=$(dmenu < /dev/null) && maim --hidecursor ~/screenshots/$(date +%Y-%m-%dT%H-%M-%S_)$outfilePrefix.png" 
+bindsym $mod+Shift+s exec --no-startup-id "outfilePrefix=$(dmenu < /dev/null) && maim -s --hidecursor ~/screenshots/$(date +%Y-%m-%dT%H-%M-%S_)$outfilePrefix.png" 
 
