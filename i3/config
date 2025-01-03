@@ -190,6 +190,7 @@ bar {
        
 }
 exec --no-startup-id gammastep -O 2000
-bindsym $mod+Shift+x exec --no-startup-id "outfilePrefix=$(dmenu < /dev/null) && maim --hidecursor ~/screenshots/$(date +%Y-%m-%d_)$outfilePrefix.png" 
-bindsym $mod+Shift+s exec --no-startup-id "outfilePrefix=$(dmenu < /dev/null) && maim -s --hidecursor ~/screenshots/$(date +%Y-%m-%d_)$outfilePrefix.png" 
+bindsym $mod+Shift+x exec --no-startup-id "outfilePrefix=$(dmenu < /dev/null) && maim --hidecursor ~/screenshots/$(date +%Y-%m-%d_)$outfilePrefix.png ||  i3-nagbar --type warning --message 'Error: Maim exited with non-zero exit code'" 
+bindsym $mod+Shift+s exec --no-startup-id "outfilePrefix=$(dmenu < /dev/null) && maim -s --hidecursor ~/screenshots/$(date +%Y-%m-%d_)$outfilePrefix.png ||  i3-nagbar --type warning --message 'Error: Maim exited with non-zero exit code'"
+
 
