@@ -32,16 +32,22 @@ The pictures below  were randomly taken during my work. I didn't setup these pro
 
    I mostly use Imagemagick from command line for cropping, chopping, resizing. I just guess the required chop size and it often works. For trivial tasks, I use Gimp.
 
-  See my `crop-sc-status-nav-bar.sh` [script](https://github.com/hstsethi/matrix-scripts) for a practical example.
+  See my `crop-sc-status-nav-bar.sh` script in `privacy-scripts` folder for a practical example.
 
   Though, this usually has to be done only with mobile screenshots, as on desktop, I use combination of I3 shortcuts, Dmenu, Maim to take cropped screenshots, and save them with  ISO 8601 formatted date followed by input variable collected through Dmenu.  The shortcut is `$Mod1 + Shift + s`.
 
 - Navigation Software
   
-   I use Organic Maps, and a simple compass, on both Android and Desktop. I scrap important place's coordinates from Google maps and then **locally** bookmark them, export them to KML.
+    I use Organic Maps, and a simple compass, on both Android and Desktop. I scrap important place's coordinates from Google maps and then **locally** bookmark them, export them to KML.
 
- My mobile doesn't have a precise GPS due to it being debloated. Though, I do not need to use map much. In case map isn't available, I also have knowledge of primitive methods of navigation including constellations, [stick and shadow method](https://res.cloudinary.com/dkgunni5p/image/upload/primitve-compass-ground_f93fb1.jpg).
-  
+    My mobile doesn't have a precise GPS due to it being debloated. Though, I do not need to use map much. In case map isn't available, I also have knowledge of primitive methods of navigation including constellations, [stick and shadow method](https://res.cloudinary.com/dkgunni5p/image/upload/primitve-compass-ground_f93fb1.jpg).
+
+- UFW 
+
+    I used it in past, but it was too slow for my use-case. I have, since age 17, switched to Iptables script, `iptables-ovpn-kill-switch.sh`, that automatically extracts all ips, ports from openvpn config file. It then blocks all connections except from those ips and only from specific users: root, firefox. There is an another user called `nonet` which I use to run commands without internet.
+
+
+
 ## No Frills Dotfiles Manifesto
 
 - Efficiency, time savings over aesthetic.
