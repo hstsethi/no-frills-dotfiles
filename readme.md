@@ -19,7 +19,6 @@ The pictures below  were randomly taken during my work. I didn't setup these pro
     I don't watch videos. If I do, I  stick with default mpv, ffplay.
 
 - Wallpaper Utility
-
 - Web Browser
  
    I mostly use Librewolf with JavaScript disabled, Elinks with default configuration.
@@ -51,9 +50,11 @@ The pictures below  were randomly taken during my work. I didn't setup these pro
 ## No Frills Dotfiles Manifesto
 
 - Efficiency, time savings over aesthetic.
-
 - Don't fix it until it's broken. Don't customize unless required.
-
 - Document everything. Explain what did you do and why.
-
 - Keyboard over mouse.
+- Machine Readability
+
+ Configuration files must be machine readable. However this rule can be extended to various other scenarios including function documentation, personal notes in markdown. 
+ 
+For an example of such, see my  [Structured List Md](https://github.com/hstsethi/structured-list-md) project. Which is a  specification, scripts for authoring structured, machine readable lists in plain Markdown by leveraging HTML. The readme of this project, what you are reading right now, also implements this.
