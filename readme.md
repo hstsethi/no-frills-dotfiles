@@ -1,6 +1,6 @@
 ## Hstsethi's No Frills Dotfiles
 
-This is my personal collection of dotfiles that follow the guidelines mentioned in manifesto below.
+This is a repository about how I do my computing, what softwares do I use, what I do not and why not, scripts, dotfiles and manifesto.
 
 The pictures below  were randomly taken during my work. I didn't setup these programs this way just for taking screenshots. They aim to show the real picture of how my workflow is like.
 
@@ -43,7 +43,7 @@ The pictures below  were randomly taken during my work. I didn't setup these pro
 
 - UFW 
 
-    I used it in past, but it was too slow for my use-case. I have, since age 17, switched to Iptables script, `iptables-ovpn-kill-switch.sh`, that automatically extracts all ips, ports from openvpn config file. It then blocks all connections except from those ips and only from specific users: root, firefox. There is an another user called `nonet` which I use to run commands without internet.
+    I used it in past, but it was too slow for my use-case, it also creates lot of unnecessary chains. I have, since age 17, switched to Iptables script, `iptables-ovpn-kill-switch.sh`, that automatically extracts all ips, ports from openvpn config file. It then blocks all connections except from those ips and only from specific users: root, firefox. There is an another user called `nonet` which I use to run commands without internet.
 
 
 
