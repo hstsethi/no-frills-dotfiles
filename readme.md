@@ -53,6 +53,10 @@ The pictures below  were randomly taken during my work. I didn't setup these pro
 - Don't fix it until it's broken. Don't customize unless required.
 - Document everything. Explain what did you do and why.
 - Keyboard over mouse.
+- Avoid unnecessary processes
+
+Combine sed expressions with -e. Don't compress tar balls unless really required and result will likely be smaller. 
+ 
 - Machine Readability
 
  Configuration files must be machine readable. However this rule can be extended to various other scenarios including function documentation, personal notes in markdown. 
