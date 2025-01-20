@@ -45,7 +45,11 @@ The pictures below  were randomly taken during my work. I didn't setup these pro
 
     I used it in past, but it was too slow for my use-case, it also creates lot of unnecessary chains. I have, since age 17, switched to Iptables script, `iptables-ovpn-kill-switch.sh`, that automatically extracts all ips, ports from openvpn config file. It then blocks all connections except from those ips and only from specific users: root, firefox. There is an another user called `nonet` which I use to run commands without internet.
 
+- Cache Cleaners
 
+I find their whole concept to be ineffective. Disk space is cheap and abundant, but not read-write cycle. Trying to delete them will lead to extra cycles of read-write.
+
+On mobile, I use a custom shell script to move private stuff to sdcard. Then I backup to other devices through SD card. Storing them on SD card gives another advantage that SD card can be easily removed if required.
 
 ## No Frills Dotfiles Manifesto
 
@@ -55,7 +59,7 @@ The pictures below  were randomly taken during my work. I didn't setup these pro
 - Keyboard over mouse.
 - Avoid unnecessary processes
 
-Combine sed expressions with -e. Don't compress tar balls unless really required and result will likely be smaller. 
+Combine sed expressions with -e. Don't use rm with `-rf` flags. Don't compress tar balls unless really required and result will likely be smaller. 
  
 - Machine Readability
 
