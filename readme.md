@@ -59,10 +59,14 @@ On mobile, I use a custom shell script to move private stuff to sdcard. Then I b
 - Keyboard over mouse.
 - Avoid unnecessary processes
 
-Combine sed expressions with -e. Don't use rm with `-rf` flags. Don't compress tar balls unless really required and result will likely be smaller. 
+Combine sed expressions with -e. Don't use rm with `-rf` flags. Avoid temporary files. Don't compress tar balls unless really required and result will likely be smaller.
  
 - Machine Readability
+
+ Don't write error messages to stdout.
 
  Configuration files must be machine readable. However this rule can be extended to various other scenarios including function documentation, personal notes in markdown. 
  
 For an example of such, see my  [Structured List Md](https://github.com/hstsethi/structured-list-md) project. Which is a  specification, scripts for authoring structured, machine readable lists in plain Markdown by leveraging HTML. The readme of this project, what you are reading right now, also implements this.
+
+The script provided there also demonstrates these principles such as combining sed expressions, avoiding temp files, and not writing error messages to stdout
