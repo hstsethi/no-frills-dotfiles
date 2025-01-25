@@ -70,3 +70,5 @@ Combine sed expressions with -e. Don't use rm with `-rf` flags. Avoid temporary 
 For an example of such, see my  [Structured List Md](https://github.com/hstsethi/structured-list-md) project. Which is a  specification, scripts for authoring structured, machine readable lists in plain Markdown by leveraging HTML. The readme of this project, what you are reading right now, also implements this.
 
 The script provided there also demonstrates these principles such as combining sed expressions, avoiding temp files, and not writing error messages to stdout
+
+Another minimalist example of this is my [obfuscate-initials](https://github.com/hstsethi/obfuscate-initials) project, which uses print to output valid YAML, which can be piped to yq to convert to other formats, if required.
