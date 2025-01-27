@@ -71,4 +71,4 @@ For an example of such, see my  [Structured List Md](https://github.com/hstsethi
 
 The script provided there also demonstrates these principles such as combining sed expressions, avoiding temp files, and not writing error messages to stdout
 
-Another minimalist example of this is my [obfuscate-initials](https://github.com/hstsethi/obfuscate-initials) project, which uses print to output valid YAML, which can be piped to yq to convert to other formats, if required.
+Another minimalist example of this is my [anonymize-initials](https://github.com/hstsethi/anonymize-initials) project, which uses print, instead of external library, to output valid YAML, which can be piped to yq to convert to other formats, if required. It also avoids unneccessary processes, such as of regex, by advocating for tr over sed.
